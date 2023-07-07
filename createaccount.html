@@ -4,52 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fintech</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Fintech - Crie sua conta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
-
 <body>
-
     <main class="w-100 m-auto">
         <a href="./login.html">
             <img class="mb-4" src="./assets/images/logo.svg" alt="logo Fintech" width="102" height="57">
         </a>
         <form>
-
-            <h1 class="h3 mb-1 fw-normal text-center">Crie já sua conta</h1>
-            <p class="text-center mb-4">Crie sua conta para começar a</br>
-                controlar sua grana!</p>
-
+            <h1 class="h2 mb-1 fw-normal text-center">Crie já sua conta</h1>
+            <p class="text-center mb-4">Crie sua conta para começar a controlar sua grana!</p>
             <div class="form-floating">
-                <label for="floatingInput">Seu email</label>
                 <input type="email" class="form-control mb-3" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Seu email</label>
             </div>
             <div class="form-floating">
-                <label for="floatingPassword">Sua senha</label>
                 <input type="password" class="form-control mb-3" id="floatingPassword" placeholder="Senha" required>
+                <label for="floatingPassword">Sua senha</label>
             </div>
-
             <div class="form-floating">
-                <label for="floatingPassword">Confirme sua senha</label>
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" required>
+                <input type="password" class="form-control" id="floatingConfirmPassword" placeholder="Senha" required>
+                <label for="floatingConfirmPassword">Confirme sua senha</label>
             </div>
-
-            <div class="checkbox mt-3 text-center">
-                <label>
-                    <input type="checkbox" value="remember-me" required> Li e concordo com os <a href="#"
-                        class="text-green">Termos de uso</a>
+            <div class="form-check mt-3 d-flex justify-content-center gap-1">
+                <input class="form-check-input" type="checkbox" value="remember-me" id="agreeCheck" required>
+                <label class="form-check-label" for="agreeCheck">
+                    Li e concordo com os <a href="#" class="text-success">Termos de uso</a>
                 </label>
-            </div>
-
-            <button class="w-100 btn btn-lg btn-green mt-3" type="submit">Começar a usar</button>
-            <p class="mt-4 mb-3 text-muted text-center">Já sou cadastrado. <a class="text-green"
-                    href="./login.html">Quero fazer login!</a></p>
+            </div>            
+            <button class="w-100 btn btn-lg btn-success mt-3" type="submit">Começar a usar</button>
+            <p class="mt-4 mb-3 text-muted text-center">Já sou cadastrado.<a class="text-success" href="./login.html">Quero fazer login!</a></p>
         </form>
     </main>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
-
 </html>
